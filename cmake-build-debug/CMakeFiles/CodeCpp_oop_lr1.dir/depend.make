@@ -5,6 +5,7 @@ CMakeFiles/CodeCpp_oop_lr1.dir/Complex.cpp.o: ../Complex.cpp
 CMakeFiles/CodeCpp_oop_lr1.dir/Complex.cpp.o: ../Complex.h
 CMakeFiles/CodeCpp_oop_lr1.dir/Complex.cpp.o: ../ComplexCout.cpp
 
+CMakeFiles/CodeCpp_oop_lr1.dir/ComplexCout.cpp.o: ../Complex.h
 CMakeFiles/CodeCpp_oop_lr1.dir/ComplexCout.cpp.o: ../ComplexCout.cpp
 
 CMakeFiles/CodeCpp_oop_lr1.dir/main.cpp.o: ../Complex.h

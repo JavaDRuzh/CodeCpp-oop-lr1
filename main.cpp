@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Complex.h"
 
 int main() {
@@ -9,8 +8,4 @@ int main() {
     Complex sum = Complex::sum(*z1,*z2);
     Complex sub = Complex::sub(*z1, *z2);
     Complex div = Complex::div(*z1, *z2);
-
-
-
-
 }
