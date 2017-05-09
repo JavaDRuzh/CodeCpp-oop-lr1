@@ -7,8 +7,6 @@
 #IncludeRegexTransform: 
 
 /home/druzh/Projects/CLionProjects/CodeCpp-oop-lr1/Complex.cpp
-iostream
--
 Complex.h
 /home/druzh/Projects/CLionProjects/CodeCpp-oop-lr1/Complex.h
 ComplexCout.cpp
