@@ -16,6 +16,10 @@ public:
 
     int getIm() const;
 
+    void setRe(int re);
+
+    void setIm(int im);
+
     // Multiplication of complex numbers
     static Complex mult(Complex z1, Complex z2);
 
@@ -27,6 +31,11 @@ public:
 
     // Division of complex numbers
     static Complex div(Complex z1, Complex z2);
+
+    // Module of complex number
+    static double mod(Complex z);
+
+
 };
 
 #endif
