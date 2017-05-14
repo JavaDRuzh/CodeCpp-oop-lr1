@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/druzh/Projects/CLionProjects/CodeCpp-oop-lr1/Complex.cpp
+C:/Users/Vladimir/CLionProjects/CodeCpp-oop-lr1/Complex.cpp
 cmath
 -
 Complex.h
-/home/druzh/Projects/CLionProjects/CodeCpp-oop-lr1/Complex.h
+C:/Users/Vladimir/CLionProjects/CodeCpp-oop-lr1/Complex.h
 ComplexCout.cpp
-/home/druzh/Projects/CLionProjects/CodeCpp-oop-lr1/ComplexCout.cpp
+C:/Users/Vladimir/CLionProjects/CodeCpp-oop-lr1/ComplexCout.cpp
 
-/home/druzh/Projects/CLionProjects/CodeCpp-oop-lr1/Complex.h
+C:/Users/Vladimir/CLionProjects/CodeCpp-oop-lr1/Complex.h
 
-/home/druzh/Projects/CLionProjects/CodeCpp-oop-lr1/ComplexCout.cpp
+C:/Users/Vladimir/CLionProjects/CodeCpp-oop-lr1/ComplexCout.cpp
 iostream
 -
 Complex.h
-/home/druzh/Projects/CLionProjects/CodeCpp-oop-lr1/Complex.h
+C:/Users/Vladimir/CLionProjects/CodeCpp-oop-lr1/Complex.h
 
-/home/druzh/Projects/CLionProjects/CodeCpp-oop-lr1/main.cpp
+C:/Users/Vladimir/CLionProjects/CodeCpp-oop-lr1/main.cpp
 iostream
 -
 Complex.h
-/home/druzh/Projects/CLionProjects/CodeCpp-oop-lr1/Complex.h
+C:/Users/Vladimir/CLionProjects/CodeCpp-oop-lr1/Complex.h
 
