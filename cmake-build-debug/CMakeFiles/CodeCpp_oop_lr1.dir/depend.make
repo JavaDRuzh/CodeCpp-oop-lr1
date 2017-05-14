@@ -9,5 +9,6 @@ CMakeFiles/CodeCpp_oop_lr1.dir/ComplexCout.cpp.obj: ../Complex.h
 CMakeFiles/CodeCpp_oop_lr1.dir/ComplexCout.cpp.obj: ../ComplexCout.cpp
 
 CMakeFiles/CodeCpp_oop_lr1.dir/main.cpp.obj: ../Complex.h
+CMakeFiles/CodeCpp_oop_lr1.dir/main.cpp.obj: ../ComplexCout.cpp
 CMakeFiles/CodeCpp_oop_lr1.dir/main.cpp.obj: ../main.cpp
 

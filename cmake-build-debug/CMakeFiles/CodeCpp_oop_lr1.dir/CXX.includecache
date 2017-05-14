@@ -9,6 +9,8 @@
 C:/Users/Vladimir/CLionProjects/CodeCpp-oop-lr1/Complex.cpp
 cmath
 -
+iostream
+-
 Complex.h
 C:/Users/Vladimir/CLionProjects/CodeCpp-oop-lr1/Complex.h
 ComplexCout.cpp
@@ -27,4 +29,6 @@ iostream
 -
 Complex.h
 C:/Users/Vladimir/CLionProjects/CodeCpp-oop-lr1/Complex.h
+ComplexCout.cpp
+C:/Users/Vladimir/CLionProjects/CodeCpp-oop-lr1/ComplexCout.cpp
 

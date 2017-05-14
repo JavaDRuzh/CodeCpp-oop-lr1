@@ -1,88 +1,86 @@
 #include <cmath>
+#include <iostream>
 #include "Complex.h"
 #include "ComplexCout.cpp"
 
+Complex::Complex(double re, double im) : re(re), im(im) {}
 
-Complex::Complex(int re, int im) : re(re), im(im) {}
-
-int Complex::getRe() const {
+double Complex::getRe() const {
     return re;
 }
 
-int Complex::getIm() const {
+double Complex::getIm() const {
     return im;
 }
 
-void Complex::setRe(int re) {
+void Complex::setRe(double re) {
     Complex::re = re;
 }
 
-void Complex::setIm(int im) {
+void Complex::setIm(double im) {
     Complex::im = im;
 }
 
-// Multiplication of complex numbers
-Complex Complex::mult(Complex z1, Complex z2) {
+Complex Complex::operator*(Complex &z)
+{
+    double newRe, newIm;
+    newRe = re * z.re - im * z.im;
+    newIm = re * z.im + z.re * im;
 
-    ComplexCout::taskMult(z1, z2);
-    ComplexCout::coutMult(z1, z2);
-
-    int re = z1.getRe() * z2.getRe() - z1.getIm() * z2.getIm();
-    int im = z1.getIm() * z2.getRe() + z1.getRe() * z2.getIm();
-
-    ComplexCout::resultCoplex(Complex(re, im));
-
-    return Complex(re, im);
+    return Complex(newRe, newIm);
 }
 
-// Sum of complex numbers
-Complex Complex::sum(Complex z1, Complex z2) {
+Complex Complex::operator+(Complex &z)
+{
+    double newRe, newIm;
+    newRe = re + z.re;
+    newIm = im + z.im;
 
-    ComplexCout::taskSum(z1, z2);
-    ComplexCout::coutSum(z1, z2);
-
-    int re = z1.getRe() + z2.getRe();
-    int im = z1.getIm() + z2.getIm();
-
-    ComplexCout::resultCoplex(Complex(re, im));
-
-    return Complex(re, im);
+    return Complex(newRe, newIm);
 }
 
-// Subtraction of complex numbers
-Complex Complex::sub(Complex z1, Complex z2) {
+Complex Complex::operator-(Complex &z)
+{
+    double newRe, newIm;
+    newRe = re - z.re;
+    newIm = im - z.im;
 
-    ComplexCout::taskSub(z1, z2);
-    ComplexCout::coutSub(z1, z2);
-    int re = z1.getRe() - z2.getRe();
-    int im = z1.getIm() - z2.getIm();
-
-    ComplexCout::resultCoplex(Complex(re, im));
-
-    return Complex(re, im);
+    return Complex(newRe, newIm);
 }
 
-// Division of complex numbers
-Complex Complex::div(Complex z1, Complex z2) {
+Complex Complex::operator/(Complex &z)
+{
+    double denominator, newRe, newIm;
+    denominator = z.re * z.re + z.im * z.im;
+    newRe = (re * z.re + im * z.im) / denominator;
+    newIm = (z.re * im - re * z.im) / denominator;
 
-    ComplexCout::taskDiv(z1, z2);
-
-    int re = (z1.getRe() * z2.getRe() + z1.getIm() * z2.getIm()) /
-             (z2.getRe() * z2.getRe() + z2.getIm() * z2.getIm());
-    int im = (z1.getIm() * z2.getRe() - z1.getRe() * z2.getIm()) /
-             (z2.getRe() * z2.getRe() + z2.getIm() * z2.getIm());
-
-    ComplexCout::resultCoplex(Complex(re, im));
-
-    return Complex(re, im);
+    return Complex(newRe, newIm);
 }
 
 // Module of complex number
 double Complex::mod(Complex z) {
     ComplexCout::coutMod(z);
-    double res = sqrt(z.getRe()*z.getRe() + z.getIm()*z.getIm());
+    double res = sqrt(z.getRe() * z.getRe() + z.getIm() * z.getIm());
     return res;
 }
+
+std::ostream &operator<< (std::ostream &fo, Complex &z)
+{
+    if (z.im < 0) fo << z.re << " +i(" << z.im << ")\n";
+    else fo << z.re << " +i" << z.im << "\n";
+
+    return fo;
+}
+
+
+
+
+
+
+
+
+
 
 
 

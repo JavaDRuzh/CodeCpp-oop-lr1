@@ -4,37 +4,34 @@
 
 class Complex {
 private:
-    int re;
-    int im;
+
+    double re;
+    double im;
 
 public:
-    Complex(int re, int im);
-
+    Complex(double re, double im);
     ~Complex() {};
-
-    int getRe() const;
-
-    int getIm() const;
-
-    void setRe(int re);
-
-    void setIm(int im);
+    double getRe() const;
+    double getIm() const;
+    void setRe(double re);
+    void setIm(double im);
 
     // Multiplication of complex numbers
-    static Complex mult(Complex z1, Complex z2);
+    Complex operator*(Complex &);	// Перегрузка оператора умножения
 
     // Sum of complex numbers
-    static Complex sum(Complex z1, Complex z2);
+    Complex operator+(Complex &);	// Перегрузка оператора сложения
 
     // Subtraction of complex numbers
-    static Complex sub(Complex z1, Complex z2);
+    Complex operator-(Complex &);	// Перегрузка оператора вычитания
 
     // Division of complex numbers
-    static Complex div(Complex z1, Complex z2);
+    Complex operator/(Complex &);	// Перегрузка оператора деления
 
     // Module of complex number
     static double mod(Complex z);
 
+    friend std::ostream &operator<<(std::ostream &, Complex &);
 
 };
 
