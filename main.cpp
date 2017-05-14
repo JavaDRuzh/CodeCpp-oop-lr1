@@ -1,30 +1,29 @@
 #include <iostream>
 #include "Complex.h"
-#include "ComplexCout.cpp"
 
 int main() {
     Complex *z1 = new Complex(-50, -3);
     Complex *z2 = new Complex(12, 4);
+    std::cout << "Complex Number 1: z1 = " << *z1;
+    std::cout << "Complex Number 2: z2 = " << *z2 << std::endl;
 
-    ComplexCout::taskMult(*z1, *z2);
-    ComplexCout::coutMult(*z1, *z2);
+    std::cout << "Multiplication of complex numbers: " << std::endl;
     Complex *mult = new Complex(*z1 * *z2);
-    ComplexCout::resultCoplex(*mult);
+    std::cout << "z = z1 * z2 = " << *mult <<std::endl;
 
-    ComplexCout::taskSum(*z1, *z2);
-    ComplexCout::coutSum(*z1, *z2);
+    std::cout << "Sum of complex numbers:" << std::endl;
     Complex *sum = new Complex(*z1 + *z2);
-    ComplexCout::resultCoplex(*sum);
+    std::cout << "z = z1 + z2 = " << *mult <<std::endl;
 
-    ComplexCout::taskSub(*z1, *z2);
-    ComplexCout::coutSub(*z1, *z2);
+    std::cout << "Subtraction of complex numbers: " << std::endl;
     Complex *sub = new Complex(*z1 - *z2);
-    ComplexCout::resultCoplex(*sub);
+    std::cout << "z = z1 - z2 = " << *mult <<std::endl;
 
-    ComplexCout::taskDiv(*z1, *z2);
+    std::cout << "Division of complex numbers: " << std::endl;
     Complex *div = new Complex(*z1 / *z2);
-    ComplexCout::resultCoplex(*div);
+    std::cout << "z = z1 / z2 = " << *mult <<std::endl;
 
+    std::cout << "Module of complex numbers: " << std::endl;
     double mod = Complex::mod(*z1);
-    std::cout << mod << std::endl;
+    std::cout << "z =|z1 + z2| = " << mod <<std::endl;
 }

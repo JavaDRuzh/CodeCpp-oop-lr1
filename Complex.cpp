@@ -1,7 +1,7 @@
 #include <cmath>
 #include <iostream>
 #include "Complex.h"
-#include "ComplexCout.cpp"
+
 
 Complex::Complex(double re, double im) : re(re), im(im) {}
 
@@ -60,7 +60,6 @@ Complex Complex::operator/(Complex &z)
 
 // Module of complex number
 double Complex::mod(Complex z) {
-    ComplexCout::coutMod(z);
     double res = sqrt(z.getRe() * z.getRe() + z.getIm() * z.getIm());
     return res;
 }

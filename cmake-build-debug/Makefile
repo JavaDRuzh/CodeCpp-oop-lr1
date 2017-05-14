@@ -149,33 +149,6 @@ Complex.cpp.s:
 	$(MAKE) -f CMakeFiles\CodeCpp_oop_lr1.dir\build.make CMakeFiles/CodeCpp_oop_lr1.dir/Complex.cpp.s
 .PHONY : Complex.cpp.s
 
-ComplexCout.obj: ComplexCout.cpp.obj
-
-.PHONY : ComplexCout.obj
-
-# target to build an object file
-ComplexCout.cpp.obj:
-	$(MAKE) -f CMakeFiles\CodeCpp_oop_lr1.dir\build.make CMakeFiles/CodeCpp_oop_lr1.dir/ComplexCout.cpp.obj
-.PHONY : ComplexCout.cpp.obj
-
-ComplexCout.i: ComplexCout.cpp.i
-
-.PHONY : ComplexCout.i
-
-# target to preprocess a source file
-ComplexCout.cpp.i:
-	$(MAKE) -f CMakeFiles\CodeCpp_oop_lr1.dir\build.make CMakeFiles/CodeCpp_oop_lr1.dir/ComplexCout.cpp.i
-.PHONY : ComplexCout.cpp.i
-
-ComplexCout.s: ComplexCout.cpp.s
-
-.PHONY : ComplexCout.s
-
-# target to generate assembly for a file
-ComplexCout.cpp.s:
-	$(MAKE) -f CMakeFiles\CodeCpp_oop_lr1.dir\build.make CMakeFiles/CodeCpp_oop_lr1.dir/ComplexCout.cpp.s
-.PHONY : ComplexCout.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -215,9 +188,6 @@ help:
 	@echo ... Complex.obj
 	@echo ... Complex.i
 	@echo ... Complex.s
-	@echo ... ComplexCout.obj
-	@echo ... ComplexCout.i
-	@echo ... ComplexCout.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
